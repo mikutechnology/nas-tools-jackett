@@ -1,8 +1,6 @@
 ![logo-blue](https://user-images.githubusercontent.com/51039935/197520391-f35db354-6071-4c12-86ea-fc450f04bc85.png)
 # NAS媒体库管理工具
 
-Docker：https://hub.docker.com/r/mikutechnology/nas-tools-jackett
-
 Wiki：https://wiki.nastool.org/
 
 API: http://localhost:3000/api/v1/
@@ -19,19 +17,10 @@ NAS媒体库管理工具。
 自用，禁止传播
 
 
-## 安装
-### 1、Docker
-```
-docker pull mikutechnology/nas-tools-jackett:latest
-```
-教程见 [这里](docker/readme.md) 。
-
-如无法连接Github，注意不要开启自动更新开关(NASTOOL_AUTO_UPDATE=false)，将NASTOOL_CN_UPDATE设置为true可使用国内源加速安装依赖。
-
-### 2、本地运行
+### 1、本地运行
 python3.10版本，需要预安装cython，如发现缺少依赖包需额外安装：
 ```
-git clone -b master https://github.com/mikutechnology/nas-tools-jackett --recurse-submodule 
+git clone -b master https://ghproxy.com/https://github.com/mikutechnology/nas-tools-jackett --recurse-submodule 
 python3 -m pip install -r requirements.txt
 export NASTOOL_CONFIG="/xxx/config/config.yaml"
 nohup python3 run.py & 
