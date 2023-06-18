@@ -8,3 +8,4 @@
 /venv/**
 /cloudflarespeedtest/**
 __pycache__
+start.sh
