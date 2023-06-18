@@ -1,4 +1,5 @@
 /.idea/**
+/start.sh
 *.pyc
 *.c
 /test.py
@@ -8,4 +9,3 @@
 /venv/**
 /cloudflarespeedtest/**
 __pycache__
-start.sh
